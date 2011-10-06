@@ -1,0 +1,28 @@
+{ "name": "Unibasic",
+  "scopeName": "source.unibasic", 
+  "fileTypes": [""], 
+  "patterns": [
+      { "match": "\\d+",
+        "name": "keyword.unibasic",
+        "captures": {
+        	"0":  { "name": "constant.numeric.unibasic" }
+        },
+        "comment": "integer number, or floating point number without a dot.",
+      },
+      {  "name": "keyword.unibasic",
+         "match": "\\d+\.\\d*",
+         "captures": {
+         	"0": { "name": "constant.numeric.unibasic"}
+         },
+         "comment": "floating point number, with dot",
+      },
+      { "name": "keyword.unibasic",
+	    "match": "\.\\d+",
+        "captures": {
+        	"0": { "name": "constant.numeric.unibasic"}
+        },
+        "comment": "floating point number, starting with a dot"
+      }
+  ],
+  "uuid": "181b5684-d089-4311-9ce5-aebdcd5648bd"
+}
