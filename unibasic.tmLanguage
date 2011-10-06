@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>foo</string>
+	</array>
+	<key>name</key>
+	<string>Unibasic</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#numericLiterals</string>
+		</dict>
+	</array>
+	<key>repository</key>
+	<dict>
+		<key>numericLiterals</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>constant.numeric.integer.unibasic</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>\d+</string>
+					<key>name</key>
+					<string>keyword.unibasic</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>constant.numeric.float.unibasic</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>constant.numeric.float.unibasic</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>\d+(\.)(?:\d+)?</string>
+					<key>name</key>
+					<string>keyword.unibasic</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>scopeName</key>
+	<string>source.unibasic</string>
+	<key>uuid</key>
+	<string>181b5684-d089-4311-9ce5-aebdcd5648bd</string>
+</dict>
+</plist>
