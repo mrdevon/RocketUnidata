@@ -89,12 +89,12 @@ syn match basicConditional      "+="
 syn keyword basicConditional      AND
 syn keyword basicConditional      OR
 
-"integer number, or floating point number without a dot.
-syn match  basicNumber		"\<\d\+\>"
-"floating point number, with dot
-syn match  basicNumber		"\<\d\+\.\d*\>"
-"floating point number, starting with a dot
-syn match  basicNumber		"\.\d\+\>"
+"done "integer number, or floating point number without a dot.
+"done syn match  basicNumber		"\<\d\+\>"
+"done "floating point number, with dot
+"done syn match  basicNumber		"\<\d\+\.\d*\>"
+"done "floating point number, starting with a dot
+"done syn match  basicNumber		"\.\d\+\>"
 
 syn match  basicSpecial         "^\k*\:"
 
