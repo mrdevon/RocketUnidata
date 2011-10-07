@@ -2,10 +2,10 @@
 	"schema_version": "1.0",
 	"name": "Unibasic",
 	"author": "Steve Romanow",
-	"description": "Rocket Unidata syntax for Sublime Text 2 editor",
 	"platforms": {
 		"*": [ 
 		     {
+		     	"description": "Rocket Unidata syntax for Sublime Text 2 editor",
 				"version": "0.1",
 				"url": "http://github.com/slestak/unibasic.tmlanguage"	    	
 		     }
