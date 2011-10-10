@@ -1,7 +1,9 @@
 { "name": "Unibasic",
   "scopeName": "source.unibasic", 
   "fileTypes": ["foo"], 
-  "patterns": [ { "include": "#numericLiterals" }
+  "patterns": [ { "include": "#numericLiterals",
+                  "include": "comments"
+                }
   ],
   "repository": {
       "numericLiterals": {
@@ -19,6 +21,14 @@
               "1": { "name": "constant.numeric.float.unibasic"},
              	"2": { "name": "constant.numeric.float.unibasic"}
             }
+          }
+        ]
+      },
+      "comments": {
+        "patterns": [
+          {
+            "name":  "comment.line.pound.unibasic",
+            "match": "(#).*$\n?",
           }
         ]
       }
