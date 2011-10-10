@@ -2,7 +2,8 @@
   "scopeName": "source.unibasic", 
   "fileTypes": ["foo"], 
   "patterns": [ { "include": "#numericLiterals",
-                  "include": "#comments"
+                  "include": "#comments",
+                  "include": "#basicStatements"
                 }
   ],
   "repository": {
@@ -29,6 +30,98 @@
           {
             "name":  "comment.line.unibasic",
             "match": "(\\*).*$\n?"
+          }
+        ]
+      },
+      "basicStatements": {
+        "patterns": [
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)"
+          },
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(BEGIN|BREAK|BSCAN)"
+          },
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(CALL|CALLING|CAPTURING|CASE|CHAIN|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)"
+          },
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)"
+          },
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY)"
+          },  
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(GET|GETLIST|GETX|GOSUB|GOTO|GROUPSTORE)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(HEADING|HUSH)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(IF|INCLUDE|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(LOCATE|LOCK|LOOP)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(NEXT)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)"
+          },     
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(PAGE|PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(REPEAT|RESET|RETURN|RETURNING|REVREMOVE|REWIND|ROLLBACK)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(UNLOCK|UNTIL)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)"
+          }, 
+          {
+            "name": "keyword.other.unibasic",
+            "match": "(\\$)%(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)"
           }
         ]
       }
