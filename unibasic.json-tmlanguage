@@ -28,7 +28,7 @@
         "patterns": [
           {
             "name":  "comment.line.unibasic",
-            "match": "(\*).*$\n?",
+            "match": "(\\*).*$\n?"
           }
         ]
       }

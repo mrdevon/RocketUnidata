@@ -12,11 +12,24 @@
 	<array>
 		<dict>
 			<key>include</key>
-			<string>#numericLiterals</string>
+			<string>#comments</string>
 		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>comments</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(\*).*$
+?</string>
+					<key>name</key>
+					<string>comment.line.unibasic</string>
+				</dict>
+			</array>
+		</dict>
 		<key>numericLiterals</key>
 		<dict>
 			<key>patterns</key>
