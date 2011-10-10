@@ -37,91 +37,91 @@
         "patterns": [
           {
             "name": "keyword.other.unibasic",
-            "match": "(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)"
+            "match": "\\b(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)\\b"
           },
           {
             "name": "keyword.other.unibasic",
-            "match": "(BEGIN|BREAK|BSCAN)"
+            "match": "\\b(BEGIN|BREAK|BSCAN)\\b"
           },
           {
             "name": "keyword.other.unibasic",
-            "match": "(CALL|CALLING|CAPTURING|CASE|CHAIN|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)"
+            "match": "\\b(CALL|CALLING|CAPTURING|CASE|CHAIN|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)\\b"
           },
           {
             "name": "keyword.other.unibasic",
-            "match": "(CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)"
+            "match": "\\b(CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)\\b"
           },
           {
             "name": "keyword.other.unibasic",
-            "match": "(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY)"
+            "match": "\\b(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY)\\b"
           },  
           {
             "name": "keyword.other.unibasic",
-            "match": "(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)"
+            "match": "\\b(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)"
+            "match": "\\b(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(GET|GETLIST|GETX|GOSUB|GOTO|GROUPSTORE)"
+            "match": "\\b(GET|GETLIST|GETX|GOSUB|GOTO|GROUPSTORE)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(HEADING|HUSH)"
+            "match": "\\b(HEADING|HUSH)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(IF|INCLUDE|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)"
+            "match": "\\b(IF|INCLUDE|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(LOCATE|LOCK|LOOP)"
+            "match": "\\b(LOCATE|LOCK|LOOP)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)"
+            "match": "\\b(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(NEXT)"
+            "match": "\\b(NEXT)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)"
+            "match": "\\b(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)\\b"
           },     
           {
             "name": "keyword.other.unibasic",
-            "match": "(PAGE|PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)"
+            "match": "\\b(PAGE|PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)"
+            "match": "\\b(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(REPEAT|RESET|RETURN|RETURNING|REVREMOVE|REWIND|ROLLBACK)"
+            "match": "\\b(REPEAT|RESET|RETURN|RETURNING|REVREMOVE|REWIND|ROLLBACK)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)"
+            "match": "\\b(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)"
+            "match": "\\b(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(UNLOCK|UNTIL)"
+            "match": "\\b(UNLOCK|UNTIL)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)"
+            "match": "\\b(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "(\\$)%(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)"
+            "match": "\\b(\\$)%(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)\\b"
           }
         ]
       }

@@ -23,133 +23,133 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)</string>
+					<string>\b(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(BEGIN|BREAK|BSCAN)</string>
+					<string>\b(BEGIN|BREAK|BSCAN)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(CALL|CALLING|CAPTURING|CASE|CHAIN|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)</string>
+					<string>\b(CALL|CALLING|CAPTURING|CASE|CHAIN|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)</string>
+					<string>\b(CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY)</string>
+					<string>\b(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)</string>
+					<string>\b(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)</string>
+					<string>\b(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(GET|GETLIST|GETX|GOSUB|GOTO|GROUPSTORE)</string>
+					<string>\b(GET|GETLIST|GETX|GOSUB|GOTO|GROUPSTORE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(HEADING|HUSH)</string>
+					<string>\b(HEADING|HUSH)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(IF|INCLUDE|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)</string>
+					<string>\b(IF|INCLUDE|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(LOCATE|LOCK|LOOP)</string>
+					<string>\b(LOCATE|LOCK|LOOP)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)</string>
+					<string>\b(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(NEXT)</string>
+					<string>\b(NEXT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)</string>
+					<string>\b(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(PAGE|PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)</string>
+					<string>\b(PAGE|PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)</string>
+					<string>\b(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(REPEAT|RESET|RETURN|RETURNING|REVREMOVE|REWIND|ROLLBACK)</string>
+					<string>\b(REPEAT|RESET|RETURN|RETURNING|REVREMOVE|REWIND|ROLLBACK)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)</string>
+					<string>\b(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)</string>
+					<string>\b(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(UNLOCK|UNTIL)</string>
+					<string>\b(UNLOCK|UNTIL)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)</string>
+					<string>\b(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(\$)%(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)</string>
+					<string>\b(\$)%(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
