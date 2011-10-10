@@ -2,7 +2,7 @@
   "scopeName": "source.unibasic", 
   "fileTypes": ["foo"], 
   "patterns": [ { "include": "#numericLiterals",
-                  "include": "comments"
+                  "include": "#comments"
                 }
   ],
   "repository": {
@@ -27,8 +27,8 @@
       "comments": {
         "patterns": [
           {
-            "name":  "comment.line.pound.unibasic",
-            "match": "(#).*$\n?",
+            "name":  "comment.line.unibasic",
+            "match": "(\*).*$\n?",
           }
         ]
       }
