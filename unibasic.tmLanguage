@@ -12,7 +12,7 @@
 	<array>
 		<dict>
 			<key>include</key>
-			<string>#basicStatements</string>
+			<string>#comments</string>
 		</dict>
 	</array>
 	<key>repository</key>

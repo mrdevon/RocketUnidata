@@ -2,8 +2,8 @@
   "scopeName": "source.unibasic", 
   "fileTypes": ["foo"], 
   "patterns": [ { "include": "#numericLiterals",
-                  "include": "#comments",
-                  "include": "#basicStatements"
+                  "include": "#basicStatements",
+                  "include": "#comments"
                 }
   ],
   "repository": {
