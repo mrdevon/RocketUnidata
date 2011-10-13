@@ -28,7 +28,7 @@
         "patterns": [
           {
             "name":  "comment.line.unibasic",
-            "match": "^\\s(\\*|REM|!).*$\n?"
+            "match": "(^\\s)(\\*|REM|!).*$\n?"
           }
         ]
       },
