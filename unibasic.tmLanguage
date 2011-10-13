@@ -161,6 +161,18 @@
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
+				<dict>
+					<key>match</key>
+					<string>-(?i:and|or|not)|!</string>
+					<key>name</key>
+					<string>keyword.operator.logical.unibasic</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>[:+%*/-]?=|[+/*%-]</string>
+					<key>name</key>
+					<string>keyword.operator.assignment.unibasic</string>
+				</dict>
 			</array>
 		</dict>
 		<key>comments</key>
