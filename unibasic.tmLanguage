@@ -12,6 +12,14 @@
 	<array>
 		<dict>
 			<key>include</key>
+			<string>#numericLiterals</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#basicStatements</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#comments</string>
 		</dict>
 	</array>
