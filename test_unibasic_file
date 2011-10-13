@@ -1,6 +1,11 @@
-# test file for Rocket Unidata Unibasic syntax
+* test file for Rocket Unidata Unibasic syntax
 
-# comments
+* numericLiterals
+
+* basicStatements
+
+* 
+* comments
 
 REM this is a comment
 * so is this
