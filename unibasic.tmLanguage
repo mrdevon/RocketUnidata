@@ -163,7 +163,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?i:and|or|not)|!\b</string>
+					<string>\b(?i:and|or|not)\b</string>
 					<key>name</key>
 					<string>keyword.operator.logical.unibasic</string>
 				</dict>
