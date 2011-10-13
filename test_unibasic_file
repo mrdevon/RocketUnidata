@@ -1,0 +1,8 @@
+# test file for Rocket Unidata Unibasic syntax
+
+# comments
+
+REM this is a comment
+* so is this
+! as well as this
+X = Y * 2 ;* asterisk before the semicolon is not a comment, after is.
