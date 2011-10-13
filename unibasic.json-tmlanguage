@@ -121,7 +121,7 @@
           { "name": "keyword.other.unibasic",
             "match": "\\b(\\$)%(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)\\b"
           },
-          {  "match": "(?i:and|or|not)|!",
+          {  "match": "\\b(?i:and|or|not)|!\\b",
              "name": "keyword.operator.logical.unibasic"
           }         
         ]
