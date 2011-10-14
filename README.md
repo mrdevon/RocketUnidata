@@ -1,9 +1,11 @@
-# Sublime Text 2 bundle for Unibasic development
-Based on the vim unibasic plugin: https://github.com/vim-scripts/unibasic.vim
+# Sublime Text 2 bundle for Rocket Unidata development.
 
-To install with Git, first make sure to remove any old Unibasic bundles then:
+Rocket sells two flavors of Multivalue database, Unidata and Universe.
+This package covers the Unidata offering.
 
-    - git clone git://github.com/slestak/unibasic.tmlanguage.git
+To install with Git, first make sure to remove any old RocketUnidata bundles then:
+
+    - git clone git://github.com/slestak/RocketUnidata.git
     - Copy the Unibasic directory to the Sublime Text packages directory:
         OS X: ~/Library/Application Support/Sublime Text 2
         Linux: ~/.Sublime Text 2
