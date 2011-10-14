@@ -8,6 +8,7 @@
 * comments
 
 REM this is a comment
-* so is this
+ * so is this
 ! as well as this
 X = Y * 2 ;* asterisk before the semicolon is not a comment, after is.
+Y = Y**2 ; REM atypical, but this is a comment also.
