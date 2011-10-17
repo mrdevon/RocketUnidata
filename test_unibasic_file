@@ -21,4 +21,4 @@ Y = Y**2 ; REM atypical, but this is a comment also.
 MYREMAINDER = MOD(CTR,1000)
 
 * dont match substrings that happen to be keywords
-$INCLUDE ADS.INCLUDE ADS.COMMON
+$INCLUDE ADS.INCLUDE FOO_INCLUDE_BAR
