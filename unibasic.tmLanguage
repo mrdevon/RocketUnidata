@@ -157,7 +157,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\$(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)</string>
+					<string>\w\$(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)\w</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
