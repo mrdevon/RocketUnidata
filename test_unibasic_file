@@ -8,7 +8,17 @@
 * comments
 
 REM this is a comment
+
  * so is this
+
 ! as well as this
+
+* trailing comments
 X = Y * 2 ;* asterisk before the semicolon is not a comment, after is.
 Y = Y**2 ; REM atypical, but this is a comment also.
+
+*TODO: this next line should NOT be a comment
+MYREMAINDER = MOD(CTR,1000)
+
+* dont match substrings that happen to be keywords
+$INCLUDE ADS.INCLUDE ADS.COMMON

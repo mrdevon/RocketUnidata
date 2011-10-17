@@ -119,7 +119,7 @@
             "match": "\\b(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)\\b"
           }, 
           { "name": "keyword.other.unibasic",
-            "match": "\\b(\\$)%(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)\\b"
+            "match": "\\b(\\$)(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)\\b"
           },
           {  "match": "\\b(?i:and|or|not)\\b",
              "name": "keyword.operator.logical.unibasic"
