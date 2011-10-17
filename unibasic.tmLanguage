@@ -43,7 +43,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(CALL|CALLING|CAPTURING|CASE|CHAIN|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)\b</string>
+					<string>\b(CALL|CALLING|CAPTURING|CASE|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
@@ -85,7 +85,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(IF|INCLUDE|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)\b</string>
+					<string>\b(IF|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
@@ -115,7 +115,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(PAGE|PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)\b</string>
+					<string>\b(PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
@@ -157,7 +157,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w\$(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)\w</string>
+					<string>\$(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
