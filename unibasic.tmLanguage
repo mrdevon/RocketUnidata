@@ -31,31 +31,31 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\w(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)\w</string>
+					<string>\b(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(BEGIN|BREAK|BSCAN)\w</string>
+					<string>\b(BEGIN|BREAK|BSCAN)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(CALL|CALLING|CAPTURING|CASE|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)\w</string>
+					<string>\b(CALL|CALLING|CAPTURING|CASE|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)\w</string>
+					<string>\b(CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY|DO)\w</string>
+					<string>\b(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY|DO)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
@@ -67,91 +67,91 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)\w</string>
+					<string>\b(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(GET|GETLIST|GETX|GOSUB|GOTO|GROUPSTORE)\w</string>
+					<string>\b(GET|GETLIST|GETX|GOSUB|GOTO|GROUPSTORE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(HEADING|HUSH)\w</string>
+					<string>\b(HEADING|HUSH)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(IF|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)\w</string>
+					<string>\b(IF|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(LOCATE|LOCK|LOOP)\w</string>
+					<string>\b(LOCATE|LOCK|LOOP)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)\w</string>
+					<string>\b(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(NEXT)\w</string>
+					<string>\b(NEXT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)\w</string>
+					<string>\b(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)\w</string>
+					<string>\b(PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)\w</string>
+					<string>\b(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(REPEAT|RESET|RETURN|RETURNING|REVREMOVE|REWIND|ROLLBACK)\w</string>
+					<string>\b(REPEAT|RESET|RETURN|RETURNING|REVREMOVE|REWIND|ROLLBACK)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)\w</string>
+					<string>\b(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)\w</string>
+					<string>\b(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(UNLOCK|UNTIL)\w</string>
+					<string>\b(UNLOCK|UNTIL)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)\w</string>
+					<string>\b(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
@@ -163,7 +163,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(?i:and|or|not)\w</string>
+					<string>\b(?i:and|or|not)\b</string>
 					<key>name</key>
 					<string>keyword.operator.logical.unibasic</string>
 				</dict>
