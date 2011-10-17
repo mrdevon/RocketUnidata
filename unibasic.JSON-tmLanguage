@@ -52,11 +52,11 @@
           },
           {
             "name": "keyword.other.unibasic",
-            "match": "\\b(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY)\\b"
+            "match": "\\b(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY|DO)\\b"
           },  
           {
             "name": "keyword.other.unibasic",
-            "match": "\\b(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\\b"
+            "match": "\\w(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\\w"
           }, 
           {
             "name": "keyword.other.unibasic",

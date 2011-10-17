@@ -55,13 +55,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY)\b</string>
+					<string>\b(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY|DO)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\b</string>
+					<string>\w(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\w</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
