@@ -65,7 +65,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\w(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\w</string>
+					<string>\b(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>

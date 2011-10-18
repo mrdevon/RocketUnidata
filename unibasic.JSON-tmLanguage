@@ -55,7 +55,7 @@
           },  
           {
             "name": "keyword.other.unibasic",
-            "match": "\\w(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\\w"
+            "match": "\\b(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
