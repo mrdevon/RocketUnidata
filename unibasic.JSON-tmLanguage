@@ -3,7 +3,8 @@
   "fileTypes": ["foo"], 
   "patterns": [ { "include": "#numericLiterals" },
                 { "include": "#basicStatements" },
-                { "include": "#comments" }
+                { "include": "#comments" },
+                { "include": "#strings" }
   ],
   "repository": {
       "numericLiterals": {
@@ -26,16 +27,14 @@
       },
       "comments": {
         "patterns": [
-          {
-            "name":  "comment.line.unibasic",
+          { "name":  "comment.line.unibasic",
             "match": "\\s*(REM|[!*])[^;]*$"
           }
         ]
       },
       "basicStatements": {
         "patterns": [
-          {
-            "name": "keyword.other.unibasic",
+          { "name": "keyword.other.unibasic",
             "match": "\\b(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)\\b"
           },
           {
@@ -123,7 +122,14 @@
           },
           {  "match": "\\b(?i:and|or|not)\\b",
              "name": "keyword.operator.logical.unibasic"
-          }         
+          }
+        ]
+      },
+      "strings" : {
+        "patterns" : [
+          { "name": "string.quoted",
+            "match": "(\"([^\"]|\\.)*\"|\\'([^\\']|\\.)*')"
+          }
         ]
       }
   },

@@ -22,3 +22,11 @@ MYREMAINDER = MOD(CTR,1000)
 
 * dont match substrings that happen to be keywords
 $INCLUDE ADS.INCLUDE FOO_INCLUDE_BAR
+
+* quoted strings
+"test"
+'test'
+"t'es't"
+'te"st'
+'te\'st'
+"\"te\"\"st\""

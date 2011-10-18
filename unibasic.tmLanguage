@@ -22,6 +22,10 @@
 			<key>include</key>
 			<string>#comments</string>
 		</dict>
+		<dict>
+			<key>include</key>
+			<string>#strings</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -217,6 +221,18 @@
 					<string>\d+(\.)(?:\d+)?</string>
 					<key>name</key>
 					<string>keyword.unibasic</string>
+				</dict>
+			</array>
+		</dict>
+		<key>strings</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>("([^"]|\.)*"|\'([^\']|\.)*')</string>
+					<key>name</key>
+					<string>string.quoted</string>
 				</dict>
 			</array>
 		</dict>
