@@ -179,7 +179,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(REM|[!*])[^;]*$</string>
+					<string>\s?(REM|[!*])[^;]*$</string>
 					<key>name</key>
 					<string>comment.line.unibasic</string>
 				</dict>
