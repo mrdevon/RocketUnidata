@@ -106,7 +106,7 @@
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "\\b(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)\\b"
+            "match": "\\b(SELECT|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
@@ -121,10 +121,19 @@
             "match": "\\b(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)\\b"
           }, 
           { "name": "keyword.other.unibasic",
-            "match": "\\$(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)"
+            "match": "\\$(BASICTYPE|DEFINE|IFDEF|IFNDEF|INCLUDE|INSERT|UNDEFINE)\\b"
           },
-          {  "match": "\\b(?i:and|or|not)\\b",
-             "name": "keyword.operator.logical.unibasic"
+          {  "match": "\\b(AND|OR|NOT)\\b",
+             "name": "keyword.operator.unibasic"
+          },
+          {  "match": "\\b(\\#|\\#<|\\#>)\\b",
+             "name": "keyword.operator.unibasic"
+          },
+          {  "name": "keyword.operator.unibasic",
+             "match": "\\b(&|\\*|\\*\\*|\\*=|\\+|\\+=|-|-=|/|/=|:|^|<=|<>|:=|=|=>|=<|><|>|>=)\\b"
+          },
+          {  "name": "keyword.operator.unibasic",
+             "match": "<(?!.*>)"
           }
         ]
       },

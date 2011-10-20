@@ -137,7 +137,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)\b</string>
+					<string>\b(SELECT|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
@@ -161,15 +161,33 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\$(CHAIN|COPYRIGHT|DEFINE|EJECT|IFDEF|IFNDEF|INCLUDE|INSERT|MAP|OPTIONS|PAGE|UNDEFINE)</string>
+					<string>\$(BASICTYPE|DEFINE|IFDEF|IFNDEF|INCLUDE|INSERT|UNDEFINE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?i:and|or|not)\b</string>
+					<string>\b(AND|OR|NOT)\b</string>
 					<key>name</key>
-					<string>keyword.operator.logical.unibasic</string>
+					<string>keyword.operator.unibasic</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(\#|\#&lt;|\#&gt;)\b</string>
+					<key>name</key>
+					<string>keyword.operator.unibasic</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(&amp;|\*|\*\*|\*=|\+|\+=|-|-=|/|/=|:|^|&lt;=|&lt;&gt;|:=|=|=&gt;|=&lt;|&gt;&lt;|&gt;|&gt;=)\b</string>
+					<key>name</key>
+					<string>keyword.operator.unibasic</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>&lt;(?!.*&gt;)</string>
+					<key>name</key>
+					<string>keyword.operator.unibasic</string>
 				</dict>
 			</array>
 		</dict>
