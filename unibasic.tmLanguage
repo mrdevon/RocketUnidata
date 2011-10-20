@@ -35,43 +35,43 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>[^_|.](ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)\b</string>
+					<string>\b(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[^_|.](BEGIN|BREAK|BSCAN)\b</string>
+					<string>\b(BEGIN|BREAK|BSCAN)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[^_|.](CALL|CALLING|CAPTURING|CASE|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)\b</string>
+					<string>\b(CALL|CALLING|CAPTURING|CASE|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[^_|.](CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)\b</string>
+					<string>\b(CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[^_|.](DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY|DO)</string>
+					<string>\b(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY|DO)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[^_|.](ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)</string>
+					<string>\b(ECHO|ELSE|ENABLEDEC|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)</string>
+					<string>\b(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
@@ -83,49 +83,49 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(HEADING|HUSH)</string>
+					<string>\b(HEADING|HUSH)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(IF|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)</string>
+					<string>\b(IF|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(LOCATE|LOCK|LOOP)</string>
+					<string>\b(LOCATE|LOCK|LOOP)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)</string>
+					<string>\b(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(NEXT)</string>
+					<string>\b(NEXT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)</string>
+					<string>\b(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)</string>
+					<string>\b(PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)</string>
+					<string>\b(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
@@ -137,31 +137,31 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(SELECT|SELECTE|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)</string>
+					<string>\b(SELECT|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)</string>
+					<string>\b(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(UNLOCK|UNTIL)</string>
+					<string>\b(UNLOCK|UNTIL)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[^_|.](WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)\b</string>
+					<string>\b(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\$(BASICTYPE|DEFINE|IFDEF|IFNDEF|INCLUDE|INSERT|UNDEFINE)</string>
+					<string>\$(BASICTYPE|DEFINE|IFDEF|IFNDEF|INCLUDE|INSERT|UNDEFINE)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>
@@ -173,7 +173,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[^_|.](#|#&lt;|#&gt;)</string>
+					<string>\b(#|#&lt;|#&gt;)\b</string>
 					<key>name</key>
 					<string>keyword.operator.unibasic</string>
 				</dict>
@@ -191,7 +191,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\s?(REM|[!*])[^;]*$</string>
+					<string>\s*(REM|[!*])[^;]*$</string>
 					<key>name</key>
 					<string>comment.line.unibasic</string>
 				</dict>
