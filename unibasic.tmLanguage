@@ -185,7 +185,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(&lt;)*(?!&gt;)\b</string>
+					<string>&lt;(?!.*&gt;)</string>
 					<key>name</key>
 					<string>keyword.operator.unibasic</string>
 				</dict>
