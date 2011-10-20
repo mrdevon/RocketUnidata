@@ -123,7 +123,7 @@
           { "name": "keyword.other.unibasic",
             "match": "\\$(BASICTYPE|DEFINE|IFDEF|IFNDEF|INCLUDE|INSERT|UNDEFINE)"
           },
-          {  "match": "[^_|.](AND|OR|NOT)",
+          {  "match": "\\b(AND|OR|NOT)\\b",
              "name": "keyword.operator.unibasic"
           },
           {  "match": "[^_|.](#|#<|#>)",

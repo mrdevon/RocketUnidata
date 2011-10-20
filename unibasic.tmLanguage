@@ -167,7 +167,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[^_|.](AND|OR|NOT)</string>
+					<string>\b(AND|OR|NOT)\b</string>
 					<key>name</key>
 					<string>keyword.operator.unibasic</string>
 				</dict>
