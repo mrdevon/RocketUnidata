@@ -28,7 +28,10 @@
       "comments": {
         "patterns": [
           { "name":  "comment.line.unibasic",
-            "match": "\\s*(REM|[!*])[^;]*$"
+            "match": "\\s?(REM|[!*])[^;]*$"
+          },
+          { "name":  "meta.comment.fixme.unibasic",
+            "match": "\\b(?i:fixme|todo):\\b"
           }
         ]
       },

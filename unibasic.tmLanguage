@@ -191,9 +191,15 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\s*(REM|[!*])[^;]*$</string>
+					<string>\s?(REM|[!*])[^;]*$</string>
 					<key>name</key>
 					<string>comment.line.unibasic</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(?i:fixme|todo):\b</string>
+					<key>name</key>
+					<string>meta.comment.fixme.unibasic</string>
 				</dict>
 			</array>
 		</dict>
