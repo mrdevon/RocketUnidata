@@ -130,7 +130,10 @@
              "name": "keyword.operator.unibasic"
           },
           {  "name": "keyword.operator.unibasic",
-             "match": "\\b(&|\\*|\\*\\*|\\*=|\\+|\\+=|-|-=|/|/=|:|^|:=|\\<|\\<=|\\<>|=|=>|=<|><|>|>=)\\b"
+             "match": "\\b(&|\\*|\\*\\*|\\*=|\\+|\\+=|-|-=|/|/=|:|^|:=|=|=>|=<|><|>|>=)\\b"
+          },
+          {  "name": "keyword.operator.unibasic",
+             "match": "\\b(<|<=|<>)(?!>)\\b"
           }
         ]
       },
