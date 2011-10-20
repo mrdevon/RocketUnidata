@@ -179,13 +179,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(&amp;|\*|\*\*|\*=|\+|\+=|-|-=|/|/=|:|^|:=|=|=&gt;|=&lt;|&gt;&lt;|&gt;|&gt;=)\b</string>
+					<string>\b(&amp;|\*|\*\*|\*=|\+|\+=|-|-=|/|/=|:|^|&lt;=|&lt;&gt;|:=|=|=&gt;|=&lt;|&gt;&lt;|&gt;|&gt;=)\b</string>
 					<key>name</key>
 					<string>keyword.operator.unibasic</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(&lt;|&lt;=|&lt;&gt;)(?!*&gt;)\b</string>
+					<string>\b(&lt;)*(?!&gt;)\b</string>
 					<key>name</key>
 					<string>keyword.operator.unibasic</string>
 				</dict>
