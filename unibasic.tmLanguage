@@ -197,7 +197,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(;|^)\s*((REM|[!*])(\s+).*)</string>
+					<string>(;|^)\s*((REM(\s+)|[!*]).*)</string>
 					<key>name</key>
 					<string>comment.line.unibasic</string>
 				</dict>
