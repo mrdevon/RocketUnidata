@@ -131,7 +131,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?&lt;!\.)(REPEAT|RESET|RETURN|RETURNING|REVREMOVE|REWIND|ROLLBACK)(?!\.)\b</string>
+					<string>\b(?&lt;!\.)(REPEAT|RESET|RETURN|RETURNING|REMOVE|REWIND|ROLLBACK)(?!\.)\b</string>
 					<key>name</key>
 					<string>keyword.other.unibasic</string>
 				</dict>

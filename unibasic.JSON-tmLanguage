@@ -102,7 +102,7 @@
           }, 
           {
             "name": "keyword.other.unibasic",
-            "match": "\\b(?<!\\.)(REPEAT|RESET|RETURN|RETURNING|REVREMOVE|REWIND|ROLLBACK)(?!\\.)\\b"
+            "match": "\\b(?<!\\.)(REPEAT|RESET|RETURN|RETURNING|REMOVE|REWIND|ROLLBACK)(?!\\.)\\b"
           }, 
           {
             "name": "keyword.other.unibasic",
