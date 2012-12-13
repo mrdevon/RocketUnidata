@@ -4,12 +4,33 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>foo</string>
+		<string>ub</string>
 	</array>
 	<key>name</key>
 	<string>Unibasic</string>
+	<key>comment</key>
+	<string>
+		TODO: +1 should be a constant in some cases, not always operator and constant
+		TODO: subroutine arguments should be colored at the top of subroutine program
+	</string>
 	<key>patterns</key>
 	<array>
+		<dict>
+			<key>include</key>
+			<string>#callStatement</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#subroutineStatement</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#labelStatement</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#multiValueVariableStatement</string>
+		</dict>
 		<dict>
 			<key>include</key>
 			<string>#numericLiterals</string>
@@ -29,165 +50,225 @@
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>basicStatements</key>
+		<key>multiValueVariableStatement</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>\b(?&lt;!\.)([A-Za-z_\.][A-Za-z0-9_\.]*)(&lt;)</string>
+					<key>end</key>
+					<string>(&gt;)</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<key>labelStatement</key>
 		<dict>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(?&lt;!\.)(ABORT|ACTIVATEKEY|AUTHORIZATION|AUXMAP)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
+					<string>^([A-Za-z_\.][A-Za-z0-9_\.]*)(\:)((;|^)\s*((REM(\s+)|[!*]).*)|\s*)$</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.unibasic meta.function.unibasic</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>comment.line.unibasic</string>
+						</dict>
+					</dict>
 				</dict>
+			</array>
+		</dict>
+		<key>subroutineStatement</key>
+		<dict>
+			<key>patterns</key>
+			<array>
 				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(BEGIN|BREAK|BSCAN)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
+					<key>begin</key>
+					<string>\b(?&lt;!\.)(SUBROUTINE)\s</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.unibasic</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(\;|$)</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#functionStatement</string>
+						</dict>
+					</array>
 				</dict>
+			</array>
+		</dict>
+		<key>callStatement</key>
+		<dict>
+			<key>patterns</key>
+			<array>
 				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(CALL|CALLING|CAPTURING|CASE|CLEAR|CLEARDATA|CLEARFILE|CLEARPROMPTS|CLEARSELECT|CLOSE)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
+					<key>begin</key>
+					<string>\b(?&lt;!\.)(CALL(C)?)\s</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.unibasic</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(\;|$)</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#functionStatement</string>
+						</dict>
+					</array>
 				</dict>
+			</array>
+		</dict>
+		<key>functionStatement</key>
+		<dict>
+			<key>patterns</key>
+			<array>
 				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(CLOSESEQ|COMMIT|COMMON|CONTINUE|CREATE|CRT)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
+					<key>begin</key>
+					<string>(?&lt;!\.)([A-Za-z_\.][A-Za-z0-9_\.]*)(\()</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.unibasic</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(\))</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
 				</dict>
+			</array>
+		</dict>
+		<key>basicStatements</key>
+		<dict>
+			<key>patterns</key>
+			<array>
 				<dict>
+					<key>comment</key>
+					<string>Assignment operators (spaces optional)</string>
 					<key>match</key>
-					<string>\b(?&lt;!\.)(DATA|DEACTIVATEKEY|DEBUG|DEFFUN|DELETE|DELETELIST|DELETEU|DIMENSION|DISABLEDEC|DISPLAY|DO)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(ECHO|ELSE|END|ENTER|EOF|EQUATE|ERRMSG|ERROR|EXECUTE|EXIT)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(FILELOCK|FILEUNLOCK|FIND|FINDSTR|FLUSH|FOOTING|FOR|FROM|FUNCTION)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(GET|GETLIST|GETX|GOSUB|GOTO|GROUPSTORE)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(HEADING|HUSH)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(IF|INPUT|INPUTCLEAR|INPUTDISP|INPUTDP|INPUTERR|INPUTNULL|INPUTTRAP|INS|ISOLATION)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(LOCATE|LOCK|LOOP)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(MAT|MATBUILD|MATPARSE|MATREAD|MATREADL|MATREADU|MATWRITE|MATWRITEU)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(NEXT)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(OFF|ON|OPEN|OPENDEV|OPENPATH|OPENSEQ)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)((PC)?PERFORM|PRECISION|PRINT|PRINTER|PRINTERR|PROCREAD|PROCWRITE|PROGRAM|PROMPT)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(RANDOMIZE|READ|READBLK|READL|READLIST|READNEXT|READSEQ|READT|READU|READV|READVL|READVU|RELEASE)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(REPEAT|RESET|RETURN|RETURNING|REMOVE|REWIND|ROLLBACK)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(SELECT|SELECTINDEX|SELECTINFO|SEND|SET|SETREM|SLEEP|SSELECT|START|STOP|SUBROUTINE)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(TABSTOP|THEN|TIMEOUT|TO|TPRINT|TRANSACTION|TTYCTL|TTYGET|TTYSET)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(UNLOCK|UNTIL)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(WEOF|WEOFSEQ|WHILE|WRITE|WRITEBLK|WRITELIST|WRITESEQ|WRITESEQF|WRITET|WRITEU|WRITEV|WRITEVU)(?!\.)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\$(BASICTYPE|DEFINE|IFDEF|IFNDEF|INCLUDE|INSERT|UNDEFINE)\b</string>
-					<key>name</key>
-					<string>keyword.other.unibasic</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(?&lt;!\.)(AND|OR|NOT)(?!\.)\b</string>
+					<string>(\*|/|-|\+|:|&lt;|&gt;)?=</string>
 					<key>name</key>
 					<string>keyword.operator.unibasic</string>
 				</dict>
 				<dict>
+					<key>comment</key>
+					<string>Arithmetic operators (spaces optional)</string>
 					<key>match</key>
-					<string>\b(\#|\#&lt;|\#&gt;)\b</string>
+					<string>(^|(?&lt;!^)\*(\*)?|/|:|\+|-)</string>
 					<key>name</key>
 					<string>keyword.operator.unibasic</string>
 				</dict>
 				<dict>
+					<key>comment</key>
+					<string>Logic operators (spaces optional)</string>
 					<key>match</key>
-					<string>\b(&amp;|\*|\*\*|\*=|\+|\+=|-|-=|/|/=|:|^|&lt;=|&lt;&gt;|:=|=|=&gt;|=&lt;|&gt;&lt;|&gt;|&gt;=)\b</string>
+					<string>(!|&amp;|\#(&lt;|&gt;)?|&lt;(=|&gt;)?|&gt;(&lt;|=)?)</string>
 					<key>name</key>
 					<string>keyword.operator.unibasic</string>
 				</dict>
 				<dict>
+					<key>comment</key>
+					<string>Logic operators (spaces preferred before and after)</string>
 					<key>match</key>
-					<string>&lt;(?!.*&gt;)</string>
+					<string>\s(AND|CAT|EQ|GE|GT|LE|LT|MATCH|MATCHES|NE|OR)\s</string>
 					<key>name</key>
 					<string>keyword.operator.unibasic</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Some compile-time constants</string>
+					<key>match</key>
+					<string>(@(A|F|V|S|R|T|SV|I)M|@(TRUE|FALSE|NULL)|\$(T(RUE)?|F(ALSE)?))\b</string>
+					<key>name</key>
+					<string>constant.language.unibasic</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Some compile-time control flow</string>
+					<key>match</key>
+					<string>\$(BASICTYPE|(UN)?DEFINE|ELSE|ENDIF|IF(N)?DEF|INCLUDE|INSERT)</string>
+					<key>name</key>
+					<string>keyword.control.unibasic</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Control keywords</string>
+					<key>match</key>
+					<string>\b(?&lt;!\.)(ABORT|BEGIN|CALL(C)?|CASE|COMMIT|CONTINUE|DO|ELSE|END|ENTER|(UDT)?EXECUTE|EXECUTESQL|EXIT|FOR|GO(SUB|TO)?|IF|INCLUDE|INPUT|LOOP|NEXT|PAUSE|(PC|MD)?PERFORM|PROMPT|REPEAT|RETURN|RQM|SLEEP|START|STOP|THEN|TRANSACTION|UNTIL|WAIT|WAKE|WHILE)(?!\.)\b</string>
+					<key>name</key>
+					<string>keyword.control.unibasic</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(@(ACCOUNT|COMMAND|CONV|CRT(HIGH|WIDE)|DATA|DATE|DAY|DICT|FORMAT|GID|HEADER|ID|LASTVERB|LEVEL|LOGNAME|LPTR(HIGH|WIDE)|MONTH|PARASENTENCE|PATH|PROCTYPE|RECORD|RECUR(0|1|2|3|4)|SENTENCE|SYS.BELL|SYSTEM.RETURN.CODE|TIME|TRANSACTION|TTY|TUPLE|UDTNO|UID|USER(0|1|2|3|4|NO|\.TYPE|\.RETURN\.CODE)|WHO|YEAR))(?!\.)</string>
+					<key>name</key>
+					<string>constant.language.unibasic</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Support functions</string>
+					<key>begin</key>
+					<string>(?&lt;!\.)(@|ABS|acceptConnection|addAuthenticationRule|addCertificate|addRequestParameter|ALPHA|am(Initialize|ReceiveMsg|ReceiveRequest|SendMsg|SendRequest|SendResponse|Terminate)|analyzeCertificate|ASCII|(A)?SIN|(A)?TAN|(A)?COS|BIT(AND|NOT|OR|XOR)|BYTELEN|CALCULATE|CATS|CHANGE|CHAR(LEN|S)?|CHECKSUM|closeSocket|CloseXMLData|COL(1|2)|CONVERT|COUNT(S)?|create(Certificate|CertRequest|Request|SecureRequest|SecurityContext)|DATE|DBTOXML|DCOUNT|DELETE|DIGEST|DIR|DISPLAYWIDTH|DOWNCASE|(D|S)?QUOTE|DROUND|EBCDIC|EDADRV_(Cleanup|CloseStmt|Connect|Disconnect|DropStmt|EndTransaction|ExecuteStmt|FetchStmt|FreeResult|GetDBInfo|GetErrmsg|GetSpecialInfo|LoadSymbols|Perform|PrepareStmt)|ENABLEDEC|ENCODE|ENCRYPT|EQS|EREPLACE|EXP|EXTRACT|FIELD(STORE)?|FILEINFO|FMT|generateKey|GES|GET(ENV|PTR|PU|QUEUE|READU|USERGROUP|USERID|USERNAME)|get(CipherSuite|HTTPDefault|ResponseHeader|SocketInformation|SocketOptions)|GROUP|GTS|HASH|ICONV(S)?|init(Secure)?ServerSocket|IN|INDEX|INDICES|INMAT|INSERT|INT|ISMB|ISNV(S)?|ITYPE|LEN(S)?|LES|LISTUSER|LN|loadSecurityContext|LOCATE|LOWER|LTS|MATCHFIELD|MAXIMUM|MBLEN|MINIMUM|MOD|NEG|NES|NFAUSER|NOT(S)?|NUM(S)?|OCONV(S)?|open(Secure)?Socket|OpenXMLData|PrepareXML|protocolLogging|PWR|RAISE|readSocket|ReadXMLData|RECORDLOCKED|ReleaseXML|REM|REMOVE|REPLACE|REUSE|RND|SADD|saveSecurityContext|SCMP|SDIV|SELECTINFO|SEQ(S)?|SETENV|set(AuthenticationDepth|CipherSuite|ClientAuthentication|HTTPDefault|PrivateKey|RandomSeed|RequestHeader|SocketOptions)|showSecurityContext|SIGNATURE|SMUL|SOAP(Create(Secure)?Request|GetDefault|GetFault|GetResponseHeader|RequestWrite|SetParameters|SetRequestBody|SetRequestContent|SetRequestHeader|SubmitRequest)|SORT|SOUNDEX|SPACE(S)?|SPLICE|SQL(AllocConnect|AllocEnv|AllocStmt|BindCol|BindParameter|Cancel|ColAttributes|Columns|Connect|DescribeCol|Disconnect|Error|ExecDirect|Execute|Fetch|FreeConnect|FreeEnv|FreeStmt|GetInfo|GetTypeInfo|NumParams|NumResultCols|ParamOptions|Prepare|RowCount|SetConnectOption|SetParam|SpecialColumns|Statistics|Tables|Transact)|SQRT|SSUB|STATUS|STR(S)?|submitRequest|SUBSTRINGS|SUM|SYSTEM|TIME(DATE)?|TRIM(B|F|S)?|UNASSIGNED|UNIT|UPCASE|writeSocket|XDOM(AddChild|Append|Clone|Close|CreateNode|CreateRoot|Evaluate|GetAttribute|GetNodeName|GetNodeType|GetNodeValue|GetOwnerDocument|GetUserData|Insert|Locate|LocateNode|Open|Remove|Replace|SetNodeValue|SetUserData|Transform|Validate(Dom)?|Write)|XLATE|XMAP(Close|Create|Open|ReadNext|ToXMLDoc)|XML(Error|Execute|Get(Error|Option(s|Value))|SetOptions|TODB))(?:\()</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.unibasic</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(\))</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Other keywords</string>
+					<key>match</key>
+					<string>\b(?&lt;!\.)(ABSOLUTE|(DE)?ACTIVATEKEY|ALL|(FIRST|LAST|NULLVAL)_ALT_KEY|APPEND|AS|ASSIGN|ASYNC|AT|BEFORE|BPIOCP|BPIOCPN|BREAK|BUFFER.KEYS|BY|CALLING|CAPTURING|CHAIN|CLEAR(COM|COMMON|DATA|FILE|INPUT|SELECT|SQL)?|CLOSE(SEQ)?|COM(MON)?|COMPILE\.DICT\.ITEM|CONNECT|CONVERT|CRT|CURRENT|DATA|DEBUG|DECLARE|DEFFUN|DEL(ETE|ETELIST|ETEU)?|DICT|DIM|DIMENSION|DISABLEDEC|DISCONNECT|DISPLAY|DTX|ECHO|EQU|EQUATE|ERROR|FIELDS|FILE(UN)?LOCK|FIND(STR)?|FLUSH|FMTS|FOOTING|FORMLIST|FROM|FUNCTION|GARBAGECOLLECT|GET(COLUMN(DATA|NAME)|(ERR)?MSG|LIST|NEXTTUPLE|X)?|GROUPSTORE|HEADING|HELP|HUSH|IN|INDEXS|INPUT(CLEAR|ERR|IF|NULL|TRAP)|INS|ISOLATION|JRNL_STATUS|KEY|LENGTH|LINEMARK|LIT(ERALLY)?|LOCATE|LOCK(ED)?|MAT(BUILD|PARSE|READ(L|U)?|WRITE(U)?)?|NO(CONVERT|DELAY)|NULL|OFF|ON|OPEN(SEQ)?|OS(CLOSE|DELETE|OPEN|(B)?READ|(B)?WRITE)|PAGE|PASS(COM(MON)?|LIST)|PRECISION|PREVIOUS|PRINT(ER|ERR)?|PRIOR|PROC(READ|WRITE)|PROGRAM|READ(BCK|BCKL|BCKU|FWD|FWDL|FWDU|L|LIST|NEXT|NEXTTUPLE|ONLY|SELECT|SEQ|T|U|V|VL|VU|WRITE|XBCK|XFWD)?|RECORDLOCK(L|U)|RELATIVE|RELEASE|REMOVE|RESIZET|RETURNING|REWIND|RNDSEED|RTNLIST|SELECT(INDEX|INFO)?|SEND(X)?|SET(INDEX|MARK|ROW|TABLE|TING)|STEP|SUBROUTINE|SWAP|SYNC|TIMEOUT|TO|UNFILTERED|UNLOCK|USE|USING|VALIDATE\.KEY|VERB|WAITING|WEOF|WEOFSEQ|WITH|WRITE(LIST|ONLY|SEQ|SEQF|T|U|V|VU)?|XTD)(?!\.)\b</string>
+					<key>name</key>
+					<string>keyword.other.unibasic</string>
 				</dict>
 			</array>
 		</dict>
@@ -216,20 +297,6 @@
 				<dict>
 					<key>captures</key>
 					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>constant.numeric.integer.unibasic</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>\d+</string>
-					<key>name</key>
-					<string>keyword.unibasic</string>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
@@ -242,9 +309,23 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\d+(\.)(?:\d+)?</string>
+					<string>(\b|-)\d+(\.)(?:\d+)?</string>
 					<key>name</key>
-					<string>keyword.unibasic</string>
+					<string>constant.numeric.float.unibasic</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>constant.numeric.integer.unibasic</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\b|-)(?&lt;!\.)\d+\b</string>
+					<key>name</key>
+					<string>constant.numeric.integer.unibasic</string>
 				</dict>
 			</array>
 		</dict>
