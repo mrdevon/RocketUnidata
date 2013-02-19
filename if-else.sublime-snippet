@@ -1,7 +1,7 @@
 <snippet>
    <content><![CDATA[
 IF ${1:CONDITION} THEN
-  ${2}
+	${2}
 END ELSE
 	${3}
 END
