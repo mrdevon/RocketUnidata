@@ -7,7 +7,7 @@ FOR ${3:COUNTER} = 1 TO ${1:TOTAL.COUNT}
 NEXT ${3:COUNTER}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>FOR-F</tabTrigger>
+	<tabTrigger>FOR-FM</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
