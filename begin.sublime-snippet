@@ -3,8 +3,6 @@
 BEGIN CASE
    CASE ${1:CONDITION}
       ${2:CODE}
-   CASE 1
-      ${3:NULL}
 END CASE
 ]]></content>
    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
